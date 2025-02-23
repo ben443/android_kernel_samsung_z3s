@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up environment
-      run: sudo apt-get install -y build-essential bsdtar ccache
+      run: sudo apt-get install -y build-essential libarchive-tools ccache
 
     - name: Run build script
       run: |
