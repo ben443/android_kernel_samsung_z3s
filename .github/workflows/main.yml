@@ -19,9 +19,9 @@ jobs:
     - name: Run build script
       run: |
         mkdir -p out
-        chmod +x build.sh
-        ./build.sh
-        mv * out/
+        chmod +x build.sh 
+        ./build.sh -m z3s -k n -c y
+        mv build/* out/
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
